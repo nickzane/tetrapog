@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetrapog | Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Metamorphous&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f1115;
+            --accent: #ff4d4d;
+            --text: #e0e0e0;
+            --muted: #888;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        /* TTRPG Style Header */
+        h1 {
+            font-family: 'Metamorphous', serif;
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+            color: white;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--muted);
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+
+        /* D4 Icon Pulsing */
+        .dice-icon {
+            font-size: 4rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; text-shadow: 0 0 20px var(--accent); }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+
+        .cta {
+            margin-top: 40px;
+            display: inline-block;
+            padding: 12px 24px;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .cta:hover {
+            background-color: var(--accent);
+            color: white;
+        }
+
+        .social-links {
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            color: var(--muted);
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .social-links a:hover {
+            color: var(--text);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="dice-icon">▲</div>
+        
+        <h1>TETRAPOG</h1>
+        <p>A new critical hit in the TTRPG space is being forged. We’re rolling for initiative—check back soon.</p>
+
+        <a href="mailto:hello@tetrapog.com" class="cta">Get in Touch</a>
+
+        <div class="social-links">
+            <a href="https://youtube.com/@tetrapog">YouTube</a>
+            <a href="https://twitter.com/tetrapogcom">X / Twitter</a>
+            <a href="https://instagram.com/tetrapog">Instagram</a>
+        </div>
+    </div>
+
+</body>
+</html>
